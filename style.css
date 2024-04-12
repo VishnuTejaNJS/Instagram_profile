@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: black;
+    color: white;
+    font-family: "Roboto";
+    scroll-behavior: smooth;
+}
+@media(min-width:367px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.8rem;
+    }
+    .left{
+        display: flex;
+    }
+    i{
+        margin: 0 0.8rem;
+    }
+    i:hover{
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+    .profileInfo{
+        display: flex;
+        padding: 0.8rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .profileInfo img{
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+    }
+    .profileStats{
+        display: flex;
+        justify-content: center;
+    }
+    .stats{
+        text-align: center;
+        margin: 0 0.4rem;
+    }
+    .bio{
+        padding: 1rem;
+    }
+    .bio span{
+        font-weight: lighter;
+        font-size: 0.8rem;
+        color: darkgray;
+    }
+    .bio p{
+        font-size: 0.9rem;
+    }
+    .highlights{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .story{
+        text-align: center;
+    }
+    .story p{
+        font-size: 0.8rem;
+    }
+    .story img{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+    .story img:hover{
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+    .posts{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 1rem;
+        grid-gap: 0.1rem;
+    }
+    .posts img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .posts img:hover{
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+}
+@media(min-width:767px){
+    .left h4,i{
+        font-size: 1.5rem;
+    }
+    .profileInfo img{
+        height: 100px;
+        width: 100px;
+    }
+    .stats{
+        font-size: 1.3rem;
+    }
+    .story img{
+        height: 95px;
+        width: 95px;
+    }
+    .story p{
+        font-size: 1.1rem;
+    }
+    
+}
